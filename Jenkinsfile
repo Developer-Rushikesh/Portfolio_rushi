@@ -10,7 +10,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'python manage.py test'
+                sh 'python3 manage.py test'
             }
         }
     }
